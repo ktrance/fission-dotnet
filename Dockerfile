@@ -4,4 +4,6 @@ WORKDIR /userfunc
 COPY out .
 EXPOSE 8888
 
-CMD ["dotnet" "/userfunc/fissiondotnet.dll"]
+ENTRYPOINT ["dotnet"]
+
+CMD ["/userfunc/fissiondotnet.dll"]
