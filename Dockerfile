@@ -1,5 +1,7 @@
-FROM microsoft/dotnet:runtime
+FROM microsoft/dotnet:1.1.0-runtime
 
 WORKDIR /userfunc
 COPY out .
-ENTRYPOINT ["dotnet", "fission-dotnet.dll"]
+EXPOSE 8888
+
+CMD ["dotnet" "/userfunc/fissiondotnet.dll"]

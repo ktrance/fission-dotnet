@@ -10,6 +10,7 @@ using Microsoft.CodeAnalysis.Emit;
 
 namespace Fission.DotNetCore.Compiler
 {
+    ///adapted from this article http://www.tugberkugurlu.com/archive/compiling-c-sharp-code-into-memory-and-executing-it-with-roslyn
     class FissionCompiler
     {
         public static Function Compile(string code, out List<string> errors) {
